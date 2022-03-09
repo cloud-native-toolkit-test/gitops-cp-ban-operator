@@ -4,3 +4,4 @@ resources:
   - base/default-ocpstorageclass.yaml
   - base/namespace-gitops-cp-ban-operator.yaml
   - base/openshift-marketplace-ibm-catalogs.yaml
+  - base/openshift-marketplace-ibm-entitlement-key.yaml
