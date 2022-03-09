@@ -1,0 +1,12 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: cp4a-file-retain-gold-gid
+  annotations:
+    storageclass.kubernetes.io/is-default-class: 'false'
+    argocd.argoproj.io/sync-wave: "-10"
+provisioner: 'ibm.io/ibmc-file'
+volumeBindingMode: 'Immediate'
+allowVolumeExpansion: true
+reclaimPolicy: 'Retain'
+parameters: {"type":"Endurance","iopsPerGB":"10","sizeRange":"[20-4000]Gi","billingType":"hourly","classVersion":"2","gidAllocate":"true"}
