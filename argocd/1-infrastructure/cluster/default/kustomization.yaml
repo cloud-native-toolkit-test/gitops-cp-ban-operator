@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - base/default-ocpstorageclass.yaml
   - base/namespace-gitops-cp-ban-operator.yaml
+  - base/openshift-marketplace-ibm-catalogs.yaml
